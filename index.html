@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+
+    <!--Including JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!--Including Scroll Reveal-->
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.0.9/scrollreveal.min.js"></script>
+
+    <!--Including bootstrap-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"-->
+    <!--integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"-->
+    <!--integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"-->
+    <!--crossorigin="anonymous"></script>-->
+
+
+    <!--Including High Charts-->
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+
+
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+
+    <!--Including scrollreveal-->
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.0.9/scrollreveal.min.js"></script>
+
+    <!--Including animate.css-->
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!--Including custom javascript-->
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/charts.js"></script>
+    <!--Including custom CSS-->
+    <link rel="stylesheet" href="css/base.css">
+
+
+    <title>Viz-on-Web Tutorial</title>
+</head>
+
+
+<body>
+
+<!--Drawing the fixed grey border-->
+<div id="left"></div>
+<div id="right"></div>
+<div id="top"></div>
+<div id="bottom"></div>
+<!--------------------------------->
+
+<!--NAVIGATION ICONS-->
+<ul id="min-navbar" style="z-index:999;">
+    <!--TOP ICON-->
+    <li><a href='#first'><img
+            src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_up_48px-512.png"
+            height="40px" width="40px" style="margin-top: -10px"> </a></li>
+    <!--GITHUB LINK-->
+    <li><a href='http://www.github.com'><img
+            src="https://wasin.io/wp-content/uploads/2015/05/showimage.png"
+            height="40px" width="40px" style="margin-top: -10px"> </a></li>
+</ul>
+<!--------------------------------->
+
+<div id="first" class="full-page-container intro-container"
+     style="overflow: auto; background-image: url('images/data-cloud.jpg'); background-repeat: no-repeat">
+    <div class="text-inside">
+        <h1 id="title" class="animated fadeIn">
+            Visualizations. So much wow.
+        </h1>
+        <p>
+            Visualizing data can be extremely useful to present data in a more intuitive and attractive way. <br>
+            This walk-through tutorial will help you make your first presentable analysis web-page.<br>
+            I have used plenty of cool animation libaries to bring the page to life. Quickest way to learn? Open the github repo, and try to follow.
+        </p>
+    </div>
+    <!--<img src='images/company.jpg' style="top: 50%; position: absolute; width: 90%">-->
+    <a href="#second">
+        <div class="scroll-down animated infinite bounce">
+            <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/22174-200.png" height="50px" width="50px">
+        </div>
+    </a>
+</div>
+<!--------------------------------->
+
+<div id="second" class="full-page-container intro-container">
+    <div class="text-inside">
+        <h2>
+            Starting simple, and stupid.
+        </h2>
+        <p>
+            Here, we plot in the demo highcharts graph. It's so easy and verbose, you'll laugh.<br>
+            Did you notice the animation as you scrolled down? This was possible by using scrollreveal and tinkering with the highcharts animation options. (Psst..try clicking on the refresh button)<br>
+            And oh! Remember that all charts are neatly written into the charts.js file.
+        </p>
+        <div id="second-chart"></div>
+    </div>
+</div>
+<!--------------------------------->
+
+<div id="third" class="full-page-container intro-container">
+    <div class="text-inside">
+        <h2>
+            How much text is too much text?
+        </h2>
+        <p>
+            Let your charts do the talking. Use meaningful axes names. Name your chart even.<br>
+            Keep text minimal. They can always to refer the detailed pdf.
+        </p>
+        <div id="third-chart"></div>
+    </div>
+</div>
+<!--------------------------------->
+
+<div id="fourth" class="full-page-container intro-container">
+    <div class="text-inside">
+        <h2>
+            Get funky.
+        </h2>
+        <p>
+            Use a combination of charts. Throw a funky theme.
+        </p>
+        <div id="fourth-chart"t></div>
+    </div>
+</div>
+<!--------------------------------->
+
+<div id="fifth" class="full-page-container intro-container">
+    <div class="text-inside">
+        <h2>
+            Explore different charting tools.
+        </h2>
+        <p>
+            Highcharts is just commonly used. There are tons of other useful libraries. <br>
+            This is a dygraph chart. <br>
+            Want to blow your mind? Try D3.
+        </p>
+        <div id="fifth-chart"></div>
+    </div>
+</div>
+<!--------------------------------->
+
+<!--Script for Script Reveal-->
+<script>
+    window.sr = ScrollReveal();
+    sr.reveal('.scroll-down');
+    sr.reveal('#min-navbar',{delay: 400, duration: 500});
+    sr.reveal('#second', {delay: 400});
+    sr.reveal('#third', {delay: 400});
+    sr.reveal('#fourth', {delay: 600});
+</script>
+</body>
+</html>
