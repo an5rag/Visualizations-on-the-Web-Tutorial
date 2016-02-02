@@ -1,15 +1,17 @@
 
-
-p,body {
+p, body {
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 25px;
 }
-h1,h2 {
+
+h1, h2 {
     font-family: 'PT Sans', sans-serif;
 }
+
 #title {
     text-shadow: 2px 2px lightblue;
 }
+
 .full-page-container {
     min-height: 100vh;
     /*background-color: azure;*/
@@ -18,8 +20,8 @@ h1,h2 {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding:30px;
-    margin:-30px;
+    padding: 30px;
+    margin: -30px;
 }
 
 .intro-container {
@@ -32,19 +34,23 @@ h1,h2 {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    top:5%;
+    top: 5%;
     right: 15px;
 
 }
+
 li {
     float: left;
 }
 
-li a {
+li {
     display: block;
     color: #666;
     text-align: center;
     padding: 14px 16px;
+}
+
+a {
     text-decoration: none;
 }
 
