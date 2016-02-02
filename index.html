@@ -58,12 +58,13 @@
             src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_up_48px-512.png"
             height="40px" width="40px" style="margin-top: -10px"> </a></li>
     <!--GITHUB LINK-->
-    <li><a href='http://www.github.com'><img
+    <li><a href='https://github.com/an5rag/Visualizations-on-the-Web-Tutorial'><img
             src="https://wasin.io/wp-content/uploads/2015/05/showimage.png"
             height="40px" width="40px" style="margin-top: -10px"> </a></li>
 </ul>
 <!--------------------------------->
 
+<!--TOPMOST LANDING SECTION-->
 <div id="first" class="full-page-container intro-container"
      style="overflow: auto; background-image: url('images/data-cloud.jpg'); background-repeat: no-repeat">
     <div class="text-inside">
@@ -71,9 +72,10 @@
             Visualizations. So much wow.
         </h1>
         <p>
-            Visualizing data can be extremely useful to present data in a more intuitive and attractive way. <br>
+            Visualizing data can be extremely useful to present data in a more intuitive and interactive way. <br>
             This walk-through tutorial will help you make your first presentable analysis web-page.<br>
-            I have used plenty of cool animation libaries to bring the page to life. Quickest way to learn? Open the github repo, and try to follow.
+            I have used plenty of cool animation libaries to bring the page to life. Quickest way to learn? Open the
+            github repo, and try to follow.
         </p>
     </div>
     <!--<img src='images/company.jpg' style="top: 50%; position: absolute; width: 90%">-->
@@ -85,6 +87,7 @@
 </div>
 <!--------------------------------->
 
+<!--START SIMPLE, AND STUPID-->
 <div id="second" class="full-page-container intro-container">
     <div class="text-inside">
         <h2>
@@ -92,7 +95,8 @@
         </h2>
         <p>
             Here, we plot in the demo highcharts graph. It's so easy and verbose, you'll laugh.<br>
-            Did you notice the animation as you scrolled down? This was possible by using scrollreveal and tinkering with the highcharts animation options. (Psst..try clicking on the refresh button)<br>
+            Did you notice the animation as you scrolled down? This was possible by using scrollreveal and tinkering
+            with the highcharts animation options. (Psst..try clicking on the refresh button)<br>
             And oh! Remember that all charts are neatly written into the charts.js file.
         </p>
         <div id="second-chart"></div>
@@ -120,14 +124,31 @@
             Get funky.
         </h2>
         <p>
-            Use a combination of charts. Throw a funky theme.
+            Use a combination of charts. Throw in a funky theme.
         </p>
-        <div id="fourth-chart"t></div>
+        <div id="fourth-chart" t></div>
     </div>
 </div>
 <!--------------------------------->
 
 <div id="fifth" class="full-page-container intro-container">
+    <div class="text-inside">
+        <h2>
+            Illustrate your intuition.
+        </h2>
+        <p>
+            Scatter Plots and Bubble charts are great ways to express intuition in classification analysis. <br>
+            To illustrate High-Chart's ability to parse csv's, we'll quickly go over the Flask/Python tutorial. <br>
+        </p>
+
+        <div id="fifth-chart"></div>
+    </div>
+</div>
+<!--------------------------------->
+
+<!--------------------------------->
+
+<div id="sixth" class="full-page-container intro-container">
     <div class="text-inside">
         <h2>
             Explore different charting tools.
@@ -137,7 +158,25 @@
             This is a dygraph chart. <br>
             Want to blow your mind? Try D3.
         </p>
-        <div id="fifth-chart"></div>
+        <div id="sixth-chart"></div>
+    </div>
+</div>
+<!--------------------------------->
+
+<div id="seventh" class="full-page-container intro-container">
+    <div>
+        <h2>
+            That's all, folks.
+        </h2>
+        <p>
+            Thank you, and happy hacking!
+        </p>
+        <div id="end-image-cartoon">
+            <img src="https://i2.wp.com/www.newyorker.com/images/2010/12/06/cartoons/101206_cartoon_059_a15439_p465.gif">
+        </div>
+        <p style="color: lightgrey">
+            Check out all the cool High Chart demos.
+        </p>
     </div>
 </div>
 <!--------------------------------->
@@ -146,10 +185,14 @@
 <script>
     window.sr = ScrollReveal();
     sr.reveal('.scroll-down');
-    sr.reveal('#min-navbar',{delay: 400, duration: 500});
+    sr.reveal('#min-navbar', {delay: 400, duration: 500});
     sr.reveal('#second', {delay: 400});
     sr.reveal('#third', {delay: 400});
     sr.reveal('#fourth', {delay: 600});
+    sr.reveal('#fifth', {delay: 600});
+    sr.reveal('#sixth', {delay: 600});
+    sr.reveal('#seventh', {delay: 600});
+
 </script>
 </body>
 </html>
