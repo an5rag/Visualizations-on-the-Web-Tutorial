@@ -1,5 +1,5 @@
 /**
- * Created by an5ra on 2/2/2016.
+ * Created by Anurag on 2/2/2016.
  */
 $(document).ready(function(){
     $('a[href*=#]').click(function() {

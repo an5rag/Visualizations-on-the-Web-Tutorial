@@ -12,6 +12,7 @@ h1, h2 {
     text-shadow: 2px 2px lightblue;
 }
 
+/*For each page-length section*/
 .full-page-container {
     min-height: 100vh;
     /*background-color: azure;*/
@@ -22,13 +23,18 @@ h1, h2 {
     flex-wrap: wrap;
     padding: 30px;
     margin: -30px;
-}
-
-.intro-container {
     -webkit-flex-direction: column;
     flex-direction: column;
 }
 
+/*Text inside a full page container*/
+.text-inside {
+    width: 60%;
+    /*border: 3px solid #73AD21;*/
+    padding: 10px;
+}
+
+/*For the mini navigation buttons*/
 #min-navbar {
     position: fixed;
     list-style-type: none;
@@ -54,11 +60,7 @@ a {
     text-decoration: none;
 }
 
-.text-inside {
-    width: 60%;
-    /*border: 3px solid #73AD21;*/
-    padding: 10px;
-}
+/*Scroll down icon*/
 
 .scroll-down {
     position: absolute;
